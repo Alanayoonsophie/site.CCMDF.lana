@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colegio Cívico Militar do Distrito Federal 316 de Santa Maria</title>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+
+    <style>
+        /* Remover o fundo branco do body */
+        body {
+            font-family: 'Kanit', sans-serif;
+            color: rgb(16, 35, 96);
+            text-align: center;
+            margin-top: 10px;
+            font-size: 1.15em;
+            position: relative;
+            background-color: #7981f1ce;
+            font-weight: bold;
+            border: none;
+            box-shadow: none;
+        }
+
+        /* Barra de navegação */
+        nav {
+            background-color: #4a51bf;
+            padding: 15px 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+
+        nav ul {
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.1em;
+            text-transform: uppercase;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #000000;
+        }
+
+        section {
+            margin: 0;
+            padding: 20px;
+            background-color: #f0f0f0;
+            border: 2px solid #4a51bf;
+            border-radius: 10px;
+            box-shadow: none;
+            transition: transform 0.3s ease;
+        }
+
+        section:hover {
+            transform: scale(1.03);
+        }
+
+        /* Adicionar padding-top para evitar que a primeira seção fique atrás da barra de navegação */
+        #informacoes {
+            padding-top: 80px; /* Ajuste o valor conforme necessário */
+        }
+
+        p {
+            font-size: 1.25em;
+            color: rgb(41, 75, 38);
+        }
+
+        .btn {
+            display: block;
+            padding: 12px 30px;
+            background-color: #4a51bf;
+            color: white;
+            font-size: 1.1em;
+            text-transform: uppercase;
+            text-decoration: none;
+            border-radius: 30px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            margin: 20px auto;
+            width: fit-content;
+        }
+
+        .btn:hover {
+            background-color: #007bff;
+            transform: scale(1.05);
+        }
+
+        .btn:focus {
+            outline: 3px solid #007bff;
+        }
+
+        ul {
+            font-size: 1em;
+            color: rgb(0, 0, 0);
+        }
+
+        footer {
+            margin-top: 20px;
+            font-size: 0.7em;
+            color: rgb(0, 0, 0);
+            text-align: center;
+        }
+
+        li {
+            text-align: left;
+        }
+
+        h1 {
+            font-weight: bold;
+            font-size: 45px;
+        }
+
+        .image-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 20px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .image-container img {
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+            margin-bottom: 20px;
+        }
+
+        .image-container img:hover {
+            transform: scale(1.05);
+        }
+
+        /* Responsividade para telas menores */
+        @media (max-width: 768px) {
+            .container {
+                margin: 15px;
+                padding: 15px;
+            }
+
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav ul li {
+                margin-bottom: 10px;
+            }
+
+            .image-container {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .btn {
+                padding: 12px 25px;
+                font-size: 1em;
+            }
+        }
+
+        /* Responsividade para telas muito pequenas (celulares) */
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.5em;
+            }
+
+            p {
+                font-size: 1em;
+            }
+
+            .image-container {
+                grid-template-columns: 1fr;
+            }
+
+            .btn {
+                padding: 10px 20px;
+                font-size: 0.9em;
+            }
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .btn:focus {
+            outline: none;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- Barra de navegação -->
+    <nav>
+        <ul>
+            <li><a href="#informacoes">Informações</a></li>
+            <li><a href="#contato">Contato</a></li>
+            <li><a href="https://www.educacao.df.gov.br/" target="_blank">Secretaria de Educação</a></li>
+            <li><a href="https://www.instagram.com/ccmdfced416stmaria/" target="_blank">Siga-nos no Instagram!</a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+
+        <section id="informacoes" class="container">
+            <h1>CCMDF CED 416 de Santa Maria</h1>
+
+            <p>Algumas Informações sobre nossa escola:</p>
+
+            <ul>
+                <li>6º lugar no ranking das escolas públicas de E.M. do DF (IDEB)</li>
+                <li>O Objetivo dos Colegios Cívicos Militars é enfrentar a violência no ambiente escolar afim de promover a cultura de paz</li>
+                <li>O CCMDF CED 416 foi militarizado em 2019 por uma votação da própria comunidade de Santa Maria</li>
+                <li>Num primeiro momento, os militares da aeronáutica e marinha ficaram responsáveis pela parte disciplinar, porém em 2024 os bombeiros assumiram esta demanda</li>
+            </ul>
+        </section>
+
+        <section id="galeriaImagens" class="container">
+            <p>Conheça o CCMDF CED 416 - Santa Maria</p>
+
+            <div class="image-container">
+                <img src="https://www.agenciabrasilia.df.gov.br/wp-conteudo/uploads/2024/05/image_123650291-2-scaled.jpg" alt="imagens da Escola" />
+                <img src="https://i0.wp.com/agenciabrasilia.df.gov.br/wp-conteudo/uploads/2024/08/WhatsApp-Image-2024-08-15-at-18.30.29-2.jpeg?resize=800%2C533" alt="imagens da Escola" />
+                <img src="https://www.agenciabrasilia.df.gov.br/wp-conteudo/uploads/2024/05/image_123650291-1-scaled.jpg" alt="imagens da Escola" />
+            </div>
+        </section>
+
+        <section id="siteSecretaria" class="container">
+            <p>Gostaria de mais informações da secretaria de educação como o calendário escolar, direitos básicos de educação, gestão compartilhada, novo ensino médio, transporte escolar e etc, acesse o site da secretaria de educação: </p>
+
+            <a href="https://www.educacao.df.gov.br/" class="btn">Site da Secretaria de Educação</a>
+            <a href="https://www.educacao.df.gov.br/gestao-compartilhada-2/" class="btn">Gestão compartilhada</a>
+            <a href="https://www.educacao.df.gov.br/calendario-escolar/" class="btn">Calendário escolar 2024</a>
+        </section>
+
+        <section id="contato" class="container">
+            <h2>Fale Conosco</h2>
+            <p>Envie suas dúvidas ou sugestões através do formulário abaixo:</p>
+            <form id="contactForm">
+                <input type="text" name="nome" placeholder="Seu nome" required>
+                <input type="email" name="email" placeholder="Seu e-mail" required>
+                <textarea name="mensagem" placeholder="Sua mensagem" rows="5" required></textarea>
+                <button type="submit" class="btn">Enviar</button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        &copy;2024 CCMDF CED 416 de Santa Maria. Todos os direitos reservados.
+    </footer>
+
+</body>
+
+</html>
+
